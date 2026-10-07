@@ -11,6 +11,8 @@ Authors send raw material: a voice note, a few lines of text, photos, a PDF, a s
 
 > **Status:** the MVP is feature-complete. It is verified end to end against stubbed external APIs: 7 database scenario suites and 12 end-to-end scenarios that run the real n8n workflows. Running it live requires your own Telegram bot and Anthropic, OpenRouter and Resend accounts.
 
+*Developed in a private repository and published here as a snapshot, so the history starts at publication.*
+
 ## Contents
 
 - [Highlights](#highlights)
@@ -478,3 +480,7 @@ Production runs on a single VPS with Docker Compose and the production overlay.
 | Approved posts are not published      | A stop switch is active                    | `/resume` lists pauses with resume buttons                                                                      |
 | Emails are not delivered              | Sender domain not verified in Resend       | Verify the domain and set `email.from`                                                                          |
 | `e2e: API settings point at the stub` | An interrupted `KEEP=1` run                | Run `./scripts/e2e.sh` once: it restores the saved settings                                                     |
+
+## License
+
+MIT
